@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,8 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/',[PagesController::class, 'home']);
+Route::get('/about',[PagesController::class, 'about']);
+
+Route::get('/mahasiswa',[MahasiswaController::class, 'index']);
