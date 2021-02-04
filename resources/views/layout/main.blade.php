@@ -21,7 +21,7 @@
                 <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
                 <a class="nav-link" href="{{url('/about')}}">About</a>
                 <a class="nav-link" href="{{url('/mahasiswa')}}">Mahasiswa</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="{{url('/students')}}">Students</a>
             </div>
         </div>
     </div>

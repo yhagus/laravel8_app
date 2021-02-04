@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Student;
+use App\Models\Mahasiswa;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -17,7 +17,7 @@ class MahasiswaController extends Controller
     {
         //
 //        $mahasiswa = DB::table('mahasiswa')->get();
-        $mahasiswa = Student::all();
+        $mahasiswa = Mahasiswa::all();
         return  view('mahasiswa.index',['mahasiswa'=>$mahasiswa]);
     }
 
